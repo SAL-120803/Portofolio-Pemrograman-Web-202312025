@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Mahasiswa Baru</title>
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Mencegah form submit ke server
+      alert("Kirim formulir berhasil!");
+      // Di sini bisa ditambahkan logika untuk menyimpan data, jika pakai backend
+    }
+  </script>
+</head>
+<body style="background: linear-gradient(to right, #f0f0f0, #e0f7fa); margin: 40px; font-family: 'Segoe UI', sans-serif; color: #333;">
+
+  <!-- Logo Kampus -->
+  <div style="text-align: center; margin-bottom: 30px;">
+    <img src="stitek.jpeg" alt="Logo Kampus" style="width: 120px;">
+  </div>
+
+  <!-- Judul -->
+  <h1 style="text-align: center; color: #00796b;">Formulir Pendaftaran Mahasiswa Baru</h1>
+
+  <!-- Formulir -->
+  <form onsubmit="handleSubmit(event)" style="max-width: 600px; margin: 0 auto; padding: 25px; background-color: white; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+
+    <!-- Data Pribadi -->
+    <fieldset style="border: none; margin-bottom: 20px;">
+      <legend style="font-weight: bold; font-size: 18px;">Data Pribadi</legend>
+
+      <label for="nama">Nama Lengkap:</label><br>
+      <input type="text" id="nama" name="nama" placeholder="Contoh: Salma Diani Putri" required
+             style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="contoh@email.com" required
+             style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+      <label>Jenis Kelamin:</label><br>
+      <label><input type="radio" name="gender" value="Pria" required> Pria</label>
+      <label><input type="radio" name="gender" value="Wanita"> Wanita</label><br><br>
+
+      <label for="alamat">Alamat Lengkap:</label><br>
+      <textarea id="alamat" name="alamat" placeholder="Tulis alamat lengkap di sini..." rows="4"
+                style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+    </fieldset>
+
+    <!-- Hobi -->
+    <fieldset style="border: none; margin-bottom: 20px;">
+      <legend style="font-weight: bold; font-size: 18px;">Hobi</legend>
+      <label>Pilih minimal 2 hobi:</label><br>
+      <label><input type="checkbox" name="hobi" value="Berenang"> Berenang</label><br>
+      <label><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label><br>
+      <label><input type="checkbox" name="hobi" value="Musik"> Musik</label><br>
+      <label><input type="checkbox" name="hobi" value="Tidur"> Tidur</label>
+    </fieldset>
+
+    <!-- Jurusan -->
+    <fieldset style="border: none; margin-bottom: 20px;">
+      <legend style="font-weight: bold; font-size: 18px;">Pilihan Jurusan</legend>
+      <label for="jurusan">Pilih Jurusan:</label><br>
+      <select id="jurusan" name="jurusan" required
+              style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;">
+        <option value="">-- Pilih Jurusan --</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Teknik Elektro">Teknik Elektro</option>
+        <option value="Bisnis Digial">Bisnis Digital</option>
+        <option value="Sistem Operasi">Sistem Operasi</option>
+      </select>
+    </fieldset>
+
+    <!-- Tombol Kirim -->
+    <div style="text-align: center;">
+      <input type="submit" value="Kirim Formulir"
+             style="background-color: #009688; color: white; padding: 12px 25px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">
+    </div>
+  </form>
+
+  <!-- Link Kampus -->
+  <p style="text-align: center; margin-top: 30px; font-size: 14px;">
+    Untuk informasi lebih lanjut, kunjungi situs resmi kampus:  
+    <a href="https://www.stitek.ac.id" target="_blank" style="color: #00796b; font-weight: bold;">STITEK Bontang</a>
+  </p>
+
+</body>
+</html>
