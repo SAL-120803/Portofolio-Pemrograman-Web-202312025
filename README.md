@@ -10,7 +10,7 @@ Repositori ini berisi tugas dan hasil kerja dari Modul 1 hingga Modul 6.
 | Modul | Deskripsi | Link |
 |-------|-----------|------|
 | Modul 1 | Pengenalan HTML | [📁 Modul-1](Modul-1/) |
-| Modul 2 | Dasar CSS dan penataan halaman | [📁 Modul-2 Tugas](Modul-2 Tugas/) |
+| Modul 2 | Dasar CSS dan penataan halaman | [📁 Modul-2Tugas](Modul-2Tugas/) |
 | Modul 3 | Layout dan desain responsif | [📁 Modul-3](Modul-3/) |
 | Modul 4 | Dasar JavaScript | [📁 Modul-4](Modul-4/) |
 | Modul 5 | Manipulasi DOM & CRUD PHP | [📁 Modul-5](Modul-5/) |
